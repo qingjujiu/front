@@ -29,51 +29,49 @@
      <div class="container">
         <div class="header-wrapper">
             <div class="main__logo" style="color: black; display: flex;">
-              <img src="./static/image/logo.png" alt="logo" style="width: 40px;">
-              <div>
+            <img src="./static/image/logo.png" alt="logo" style="width: 40px;">
+            <div>
                Bonfire<br>
                安全分布式计算系统
             </div>
 
-           </div>
-           <div class="logo__menuadjust">
-              <ul class="main-menu" style="color: black">
-                 <li class = "bar">
-                    <router-link to="/" class = "link">
-                       首页
-                    </router-link>
-                 </li>
-                 <li class = "bar">
-                    <router-link to="/demo" class = "link">
-                       演示
-                    </router-link>
-                 </li>
-                 <li class = "bar">
-                    <router-link to="/document" class = "link">
-                       文档
-                    </router-link>
-                 </li>
-                 <li class = "bar">
-                    <router-link to="/news" class = "link">
-                       新闻
-                    </router-link>
-                 </li>
-                 <li class = "bar">
-                    <router-link to="/aboutUs" class = "link">
-                       关于我们
-                    </router-link>
-                 </li>
-              </ul>
-           </div>
-           <div class="menu__components d-flex align-items-center">
-              
-
-              <div class="header-bar d-lg-none">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-              </div>
-           </div>
+            </div>
+            <div class="logo__menuadjust">
+               <ul class="main-menu" style="color: black">
+                  <li class = "bar">
+                     <router-link to="/" class = "link">
+                        首页
+                     </router-link>
+                  </li>
+                  <li class = "bar">
+                     <router-link to="/demo" class = "link">
+                        演示
+                     </router-link>
+                  </li>
+                  <li class = "bar">
+                     <router-link to="/document" class = "link">
+                        文档
+                     </router-link>
+                  </li>
+                  <li class = "bar">
+                     <router-link to="/news" class = "link">
+                        新闻
+                     </router-link>
+                  </li>
+                  <li class = "bar">
+                     <router-link to="/aboutUs" class = "link">
+                        关于我们
+                     </router-link>
+                  </li>
+               </ul>
+            </div>
+            <div class="menu__components d-flex align-items-center">
+               <div class="header-bar d-lg-none">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
         </div>
      </div>
   </header>

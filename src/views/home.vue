@@ -19,24 +19,29 @@
 	<section class="banner__section" id="ban1" >
 		<el-carousel class="introdution" motion-blur autoplay="false">
 			<el-carousel-item style = "height: 130%">
-				<p class="ban1-title">这里是Bonfire,安全分布式计算系统</p>
+				<p class="ban1-title">安全分布式计算系统</p>
 				<p style="margin-top: 3%;" class = "ban1-description">身处数据浪潮之巅，心关信息安全之悬。</p>
-				<p class = "ban1-description">结合先进安全多方计算、联邦学习、人工智能安全技术，</p>
-				<p class = "ban1-description">Bonfire为您提供数据利用安全和人工智能安全的双重保障。</p>
-				<p class = "ban1-description">确保数据使用权流通是我们的第一使命。</p>			
+				<p class = "ban1-description">通过先进的加密技术与协议，</p>
+				<p class = "ban1-description">确保多方参与的计算过程中数据隐私不被泄露，</p>
+				<p class = "ban1-description">同时实现高效、准确的计算结果，</p>
+				<p class = "ban1-description">为敏感数据环境下的协作计算提供了强有力的安全保障。</p>			
+			</el-carousel-item>
+			<el-carousel-item style = "height: 130%">
+				<p class="ban1-title">隐私保护神经网络推理应用</p>
+				<p style="margin-top: 3%;" class = "ban1-description">DLaaS + Privacy-Preserving</p>
+				<p class = "ban1-description">通过分布式计算技术和复杂的加密协议，</p>
+				<p class = "ban1-description">允许多个参与者在不共享原始数据的情况下共同执行神经网络推理，</p>
+				<p class = "ban1-description">从而在保证数据隐私的同时，实现高效的模型预测和决策。</p>
 			</el-carousel-item>
 			<el-carousel-item  >
-				
-			</el-carousel-item>
-			<el-carousel-item  >
-		
+				<p class="ban1-title">隐私集合运算工具链</p>
+				<p style="margin-top: 3%;" class = "ban1-description">DLaaS + Privacy-Preserving</p>
+				<p class = "ban1-description">利用先进的密码学技术，</p>
+				<p class = "ban1-description">在不暴露集合具体元素的前提下，</p>
+				<p class = "ban1-description">实现交集、并集等高效集合运算，</p>
+				<p class = "ban1-description">为数据隐私保护下的集合操作提供了安全可靠的解决方案。</p>
 			</el-carousel-item>
 		</el-carousel>
-
-			
-	
-
-		
 	</section>
 
 	<section class="feature__section section__padding overhid" id="ban2">
@@ -60,13 +65,13 @@
 						<el-col :span = "8" style="text-align: center;">
 							<div class="ban2-icon" >
 								<img src="static/image/image.png" style="margin-top: 2%;">
-								<span style="margin-top: 5%;">FlyFishing</span>
+								<span style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">FlyFishing</span>
 							</div>
 						</el-col>
 						<el-col :span = "8" style="text-align: center;">
 							<div class="ban2-icon" >
 								<img src="static/image/image.png" style="margin-top: 2%;">
-								<span style="margin-top: 5%;">FlyFishing</span>
+								<span style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">FlyFishing</span>
 							</div>
 						</el-col>
 					</el-row>
@@ -168,7 +173,7 @@
 										</el-button>
 									</el-col>
 									<el-col :span = "6" :offset = "10">
-										<el-button size = "large" round = "true" color = "#3c56f4" style="height: 110%; width: 70%;">
+										<el-button @click = "submitServer()" size = "large" round = "true" color = "#3c56f4" style="height: 110%; width: 70%;">
 											<template #default>
 												<div style="font-size: large; font-weight: bold; color: white;">
 													启动服务器
@@ -180,22 +185,22 @@
 							</div>
 							<div class = "ban2-result" style=" margin: auto;">
 								<el-row class = "ban2-result-head" style="margin-top: 3%;">
-									<el-col :span = "4" style="text-align: center; font-size: 120%;" :offset = "2">
+									<el-col :span = "4" style="text-align: center; font-size: 120%;" :offset = "3">
 										<div>Client</div>
 										<div>私有信息</div>	
 									</el-col>
-									<el-col :span = "4" style="text-align: center; font-size: 120%;">
+									<!-- <el-col :span = "4" style="text-align: center; font-size: 120%;">
 										<div>Client</div>
 										<div>秘密分享份额</div>	
-									</el-col>
-									<el-col :span = "4" style="text-align: center; font-size: 120%;">
+									</el-col> -->
+									<el-col :span = "4" style="text-align: center; font-size: 120%;" :offset = "3">
 										<div style="margin-top: 5%;">公开信息</div>
 									</el-col>
-									<el-col :span = "4" style="text-align: center; font-size: 120%;">
+									<!-- <el-col :span = "4" style="text-align: center; font-size: 120%;">
 										<div>Server</div>
 										<div>秘密分享份额</div>	
-									</el-col>
-									<el-col :span = "4" style="text-align: center; font-size: 120%;">
+									</el-col> -->
+									<el-col :span = "4" style="text-align: center; font-size: 120%;" :offset = "3">
 										<div>Server</div>
 										<div>私有信息</div>	
 									</el-col>
@@ -205,14 +210,14 @@
 										<div style="font-weight: bold; font-size: 130%;">数据输入</div>
 									</el-col>
 									
-									<el-col :span = "4" style="text-align: center;">
+									<el-col :span = "4" style="text-align: center;"  :offset = "1">
 										<img :src="demoImgUrl" id = "clientImg">
 									</el-col>
-									<el-col  :span = "4" style="text-align: center;" :offset = "4">
+									<el-col  :span = "4" style="text-align: center;" :offset = "3">
 										<a @click="showLog(modelStruct, '模型结构')" style=" font-size: 100%; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 											模型结构</a>									
 										</el-col>
-									<el-col :offset = "4" :span = "4" style="text-align: center;">
+									<el-col :offset = "3" :span = "4" style="text-align: center;">
 										<div>{{serverPrivateInfo}}</div>
 										<a id = "model" @click="showLog(modelParam, '模型参数')" style=" font-size: 100%; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 											模型参数</a>										
@@ -239,30 +244,28 @@
 										<div style="font-weight: bold; font-size: 130%;">前向传播</div>
 									</el-col>
 									
-									<el-col  :span = "5" style="text-align: center;" :offset = "3">
-										<div >正在计算的层数为：{{currentLayer}}</div>
+									<el-col  :span = "4" style="text-align: center;" :offset = "6">
+										<div >正在计算的层数为：{{currentLayer}}</div>									
+									</el-col>
+									<el-col  :span = "4" style="text-align: center;">
 										<a  @click="showLog(clientAcLog,'client激活值日志')" style=" font-size: 100%; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
-											激活值日志</a>									
-									</el-col>
-									<el-col :offset = "1"  :span = "2" style="text-align: center;" >
-										<div >执行时间：{{currentRuntime}}</div>
-								
-									</el-col>
-									<el-col :offset = "1" :span = "4" style="text-align: center;">
-										<div>总通信量：{{currentCom}}</div>
-										<a @click="showLog(serverAcLog,'Server激活值日志')" style=" font-size: 100%; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
-											激活值日志</a>										
+										激活值日志</a>
 									</el-col>
 								</el-row>
 								<el-row class = "ban2-result-head" style="margin-top: 3%;">
 									<el-col :span = "2"  >
 										<div style="font-weight: bold; font-size: 130%;">重建结果</div>
 									</el-col>
-									
-									<el-col  :span = "4" style="text-align: center;" :offset = "8">
+									<el-col :offset = "1"  :span = "4" style="text-align: center;" >
+										<div >执行时间：{{currentRuntime}}</div>
+									</el-col>
+									<el-col :offset = "3" :span = "4" style="text-align: center;">
+										<div>总通信量：{{currentCom}}</div>
+									</el-col>
+									<el-col  :span = "4" style="text-align: center;" :offset = "3">
 										<a  style=" font-size: 100%; color: black;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 											预测结果：{{result}}</a>									
-										</el-col>
+									</el-col>
 
 								</el-row>
 							</div>
@@ -376,22 +379,24 @@ export default {
     	selectedFile: null,
 		modelStruct: "",
 		modelParam: "",
-		serverSecretInfo: "0.123, 0.234, ",
-		serverPrivateInfo: "0.123, 0.234, ",
-		clientSecretInfo: "0.123, 0.234, ",
-		clientAcLog : "Confignetwork:files/models/secureml-norelu.json networkfilename:files/models/secureml-norelu.json (1)FCLayer     784x128     128     (Batch Size) (2)ReLU Layer     128×128 (3)FCLayer     128x128     128     (Batch Size) ",
+		serverSecretInfo: "",
+		serverPrivateInfo: "",
+		clientSecretInfo: "",
+		clientAcLog : "",
+		clientLogMin: "",
+		clientLogMax: "",
+		clientLogAvg: "",
 		clientSrLog: "",
 		serverSrLog: "",
 		serverAcLog: "",
-		currentLayer: "2",
-		currentRuntime: "10ms",
-		currentCom: "103bit",
-		result: "7",
-		demoImgUrl: "https://kyl1n.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E7%89%872.png",
+		currentLayer: "",
+		currentRuntime: "",
+		currentCom: "",
+		result: "",
+		demoImgUrl: "",
 		ws:{},
 		clientPath: "ws://10.26.21.63:20010/demo/snni/client",
 		serverPath: "ws://10.26.21.63:20010/demo/snni/server",
-
     }
   },
 
@@ -461,6 +466,7 @@ export default {
       this.fileList = fileList;
       this.selectedFile = file.raw;
       console.log(this.fileList)
+	  this.$forceUpdate()
     },
 	getBase64(file) {
 		return new Promise(function (resolve, reject) {
@@ -478,18 +484,44 @@ export default {
 			}
 			})
     },
-
+	clearData(){
+		this.modelStruct = "",
+		this.demoImgUrl = "",
+		this.modelParam = "",
+		this.currentLayer = "",
+		this.clientAcLog = "",
+		this.currentRuntime  = "",
+		this.currentCom = "",
+		this.result = "",
+		this.$forceUpdate()
+	},
     submitServer() { 
+		this.clearData();
+		let dataForm = new 	FormData();
 		const socket = io(this.serverPath, {
 			transports: ['websocket'], // 指定传输方式，如WebSocket
 		});
+		this.getBase64(this.selectedFile).then(res => {
+			dataForm.append('targetAddrClient', this.form.targetAddrClient)
+			dataForm.append('targetAddrServer', this.form.targetAddrServer)
+			dataForm.append('modelName',  this.form.modelName);
+			dataForm.append('file', res);	
+			socket.emit('data', JSON.stringify(Object.fromEntries(dataForm)));	
+		})	
 
 		socket.on('snni_start', (data) => {
 			console.log('收到来自服务器的消息:', data);	
 			this.modelParam = data.model_weight
+			this.$forceUpdate()
+		});
+
+		socket.on('snni_result', (data) => {
+			console.log('收到来自服务器的消息:', data);	
+			socket.disconnect()
 		});
     },
 	submitClient(){
+		this.clearData();
 		let dataForm = new 	FormData();
 		const socket = io(this.clientPath, {
 			transports: ['websocket'], // 指定传输方式，如WebSocket
@@ -506,19 +538,21 @@ export default {
 			console.log('收到来自服务器的消息:', data);	
 			this.modelStruct = data.model_arch
 			this.demoImgUrl = data.image
+			this.$forceUpdate()
 		});
 		socket.on('snni_step', (data) => {
 			console.log('收到来自服务器的消息:', data);	
 			this.currentLayer = data.layer
-			this.clientAcLog += "\n"
-			this.clientAcLog += data
+			this.clientAcLog = "min: " + data.min + ", max: " + data.max + ", avg: " + data.avg
+			this.$forceUpdate()
 		});
 		socket.on('snni_result', (data) => {
 			console.log('收到来自服务器的消息:', data);	
 			this.currentRuntime = data.runtime
-			this.currentCom = parseInt(data.tx_comm, 10) + parseInt(data.rx_comm, 10)
+			this.currentCom = (parseInt(data.tx_comm, 10) + parseInt(data.rx_comm, 10)) / 1024
 			this.result = data.inference_result
-
+			this.$forceUpdate()
+			socket.disconnect()
 		});
 		// this.ws = new WebSocket(this.clientPath)
 		// var wss = this.ws

@@ -22,7 +22,8 @@
     "vue": "^3.2.13",
     "vue-easy-lightbox": "^1.19.0",
     "vue-router": "^4.3.0",
-    "vue3-image-preview": "^0.2.7"
+    "vue3-image-preview": "^0.2.7",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

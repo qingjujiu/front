@@ -4,7 +4,7 @@ module.exports = defineConfig({
   lintOnSave: false,
   // 配置devServer
   devServer: {
-    host: 'localhost', // 项目运行的ip
+    host: '10.26.21.63', // 项目运行的ip
     port: 9090, // 项目运行的端口号
   },
   // 配置webpack
