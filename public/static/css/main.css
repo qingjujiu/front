@@ -516,6 +516,7 @@ p {
 
 .header-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -576,6 +577,12 @@ p {
   .header-wrapper .main__logo .logo {
     width: 100px;
   }
+}
+.logo__caption {
+  font-size: 35px !important;
+}
+.logo__slogan {
+  font-size: 20px !important;
 }
 .header-wrapper .main-menu {
   display: flex;

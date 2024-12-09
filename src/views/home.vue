@@ -1,10 +1,10 @@
 <template>
 	<el-dialog
-    v-model="dialogVisible"
-    v-model:title = Tips
-    width="500"
-    :before-close="handleClose"
-  >
+		v-model="dialogVisible"
+		v-model:title = Tips
+		width="500"
+		:before-close="handleClose"
+  	>
 		<span>{{log}}</span>
 		<template #footer>
 		<div class="dialog-footer">
@@ -14,7 +14,7 @@
 			</el-button>
 		</div>
 		</template>
-  </el-dialog>
+	</el-dialog>
 	<!--<< Banner Section Here >>-->
 	<section class="banner__section" id="ban1" >
 		<el-carousel class="introdution" motion-blur autoplay="false">
@@ -34,8 +34,8 @@
 				<p class = "ban1-description">从而在保证数据隐私的同时，实现高效的模型预测和决策。</p>
 			</el-carousel-item>
 			<el-carousel-item  >
-				<p class="ban1-title">隐私集合运算工具链</p>
-				<p style="margin-top: 3%;" class = "ban1-description">DLaaS + Privacy-Preserving</p>
+				<p class="ban1-title">隐私集合操作工具链</p>
+				<p style="margin-top: 3%;" class = "ban1-description">Align Everything</p>
 				<p class = "ban1-description">利用先进的密码学技术，</p>
 				<p class = "ban1-description">在不暴露集合具体元素的前提下，</p>
 				<p class = "ban1-description">实现交集、并集等高效集合运算，</p>
@@ -58,25 +58,23 @@
 						<el-col :span = "8" style="text-align: center; height: 50px;">
 							<div class="ban2-icon" >
 								<img src="static/image/image.png" style="margin-top: 2%;">
-								<span style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">FlyFishing</span>
+								<span  style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">FlyFishing</span>
 							</div>
 
 						</el-col>
 						<el-col :span = "8" style="text-align: center;">
 							<div class="ban2-icon" >
 								<img src="static/image/image.png" style="margin-top: 2%;">
-								<span style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">FlyFishing</span>
+								<span style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">BPCSI</span>
 							</div>
 						</el-col>
 						<el-col :span = "8" style="text-align: center;">
 							<div class="ban2-icon" >
 								<img src="static/image/image.png" style="margin-top: 2%;">
-								<span style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">FlyFishing</span>
+								<span style="margin: auto; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold;">SecSQL</span>
 							</div>
 						</el-col>
 					</el-row>
-
-
 				
 					<el-tabs  stretch = "true" v-model = "first">
 						<el-tab-pane  name="0" >
@@ -87,12 +85,12 @@
 								
 							</template>
 							<div class="ban2-tab0-description" style="margin-bottom: 4%;">
-								<div style="text-align: center; font-size: 25px; margin-top: 3%;">客户端-服务器模式下的安全两方神经网络推理方案。</div>
-								<div style="text-align: center; font-size: 25px;">允许在服务器不知晓客户端查询，且客户端不知晓服务器模型权重的前提下，完成神经网络推理。</div>
-								<a @click="scrollToSection" style="margin-left: 27.5%; font-size: 25px; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+								<div style="text-align: center; font-size: 25px; margin-top: 3%; color: #ffffff;">客户端-服务器模式下的安全两方神经网络推理方案。</div>
+								<div style="text-align: center; font-size: 25px; color: #ffffff;">允许在服务器不知晓客户端查询，且客户端不知晓服务器模型权重的前提下，完成神经网络推理。</div>
+								<a @click="scrollToSection" style="margin-left: 27.5%; font-size: 25px; color: #b3cbce;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 									为什么我需要安全推理？安全推理的使用场景是什么？</a>
 							</div>
-							<div style="background-color: #d0cece; margin: auto; width: 80%; height: 400px; border-radius: 20px;">
+							<div style="background-color: #d0cece; margin: auto; width: 80%; height: 400px; border-radius: 20px">
 								<el-row>
 									<el-col :span = "8" style="text-align: center">
 										<div style="margin-top: 3%;">
@@ -183,7 +181,7 @@
 									</el-col>
 								</el-row>
 							</div>
-							<div class = "ban2-result" style=" margin: auto;">
+							<div class = "ban2-result" style=" margin: auto; color: white">
 								<el-row class = "ban2-result-head" style="margin-top: 3%;">
 									<el-col :span = "4" style="text-align: center; font-size: 120%;" :offset = "3">
 										<div>Client</div>
@@ -214,12 +212,12 @@
 										<img :src="demoImgUrl" id = "clientImg">
 									</el-col>
 									<el-col  :span = "4" style="text-align: center;" :offset = "3">
-										<a @click="showLog(modelStruct, '模型结构')" style=" font-size: 100%; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+										<a @click="showLog(modelStruct, '模型结构')" style=" font-size: 100%; color: #b3cbce;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 											模型结构</a>									
 										</el-col>
 									<el-col :offset = "3" :span = "4" style="text-align: center;">
 										<div>{{serverPrivateInfo}}</div>
-										<a id = "model" @click="showLog(modelParam, '模型参数')" style=" font-size: 100%; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+										<a id = "model" @click="showLog(modelParam, '模型参数')" style=" font-size: 100%; color: #b3cbce;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 											模型参数</a>										
 										</el-col>
 								</el-row>
@@ -248,7 +246,7 @@
 										<div >正在计算的层数为：{{currentLayer}}</div>									
 									</el-col>
 									<el-col  :span = "4" style="text-align: center;">
-										<a  @click="showLog(clientAcLog,'client激活值日志')" style=" font-size: 100%; color: #4472c4;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+										<a  @click="showLog(clientAcLog,'client激活值日志')" style=" font-size: 100%; color: #b3cbce;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 										激活值日志</a>
 									</el-col>
 								</el-row>
@@ -263,7 +261,7 @@
 										<div>总通信量：{{currentCom}}</div>
 									</el-col>
 									<el-col  :span = "4" style="text-align: center;" :offset = "3">
-										<a  style=" font-size: 100%; color: black;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
+										<a  style=" font-size: 100%; color: white;  border-style: solid; border-top: 0px; border-left: 0px; border-right: 0px;">
 											预测结果：{{result}}</a>									
 									</el-col>
 
@@ -309,10 +307,18 @@
 							</div>
 						</el-tab-pane>
 						<el-tab-pane label="test" name="second" class = 'ban2-tab-des'>
-
+							<template #label>
+								<div class = 'ban2-tab-des'>
+									隐私集合操作
+								</div>
+							</template>
 						</el-tab-pane>
 						<el-tab-pane label="test" name="third" class = 'ban2-tab-des'>
-
+							<template #label>
+								<div class = 'ban2-tab-des'>
+									Comming soon...
+								</div>
+							</template>
 						</el-tab-pane>
 
 					</el-tabs>
@@ -574,13 +580,16 @@ export default {
 
 <style scoped >
 	.ban1-title{
-		font-size:400%;
+		font-size:300%;
 		font-weight: bold;
-		color: black;
+		color: white;
+		font-family: "sans-serif";
+		letter-spacing: 0.08em;
 
 	}
 	.ban1-description{
-		font-size: 160%;
+		font-size: 120%;
+		line-height: 1.6em;
 	}
 	.introdution{
 		width: 100%;
@@ -664,25 +673,31 @@ export default {
 
 	}
 	.ban2-tab-des{
-		font-weight: 600; color: rgb(95, 91, 91);
+		font-weight: 600; color: rgb(255, 255, 255);
 	}
 
 	#ban1{
-		background: linear-gradient(180deg,#FEFEFE 0%,#FFFFFF 0%,#2F74CD 100%); 
+		/* background: linear-gradient(180deg,#FEFEFE 0%,#FFFFFF 0%,#2F74CD 100%);  */
+		background-image: url("../static/image/fog.jpg");
+		background-color: rgba(0,0,0,0.4);
+		background-blend-mode: darken;
 		width: 100%;
 		padding-top: 14%;
 	}	
 	#ban2{
-		background: linear-gradient(38deg,#5484C3 0%,#FFF1EB 100%); 
+		background: rgb(14,58,68);
+		background: linear-gradient(201deg, rgba(14,58,68,1) 19%, rgba(28,119,138,1) 100%);
 		width: 100%;
 
 		color: black !important;
 	}
 	.ban2-title{
-		color: #000;
+		color: #fff;
 		text-align: center;
 		font-size: 40px !important;
 		font-weight: bold;
+		font-family: "sans-serif";
+		letter-spacing: 0.08em;
 	}
 	#p3{
 		/* background-image: url("../static/image/p2.jpg"); */

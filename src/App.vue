@@ -28,16 +28,15 @@
   <header class="header-section header__one" style = "border: 0cm;">
      <div class="container">
         <div class="header-wrapper">
-            <div class="main__logo" style="color: black; display: flex;">
-            <img src="./static/image/logo.png" alt="logo" style="width: 40px;">
+            <div class="main__logo" style="color: white; display: flex;">
+            <!-- <img src="./static/image/logo.png" alt="logo" style="width: 40px;"> -->
             <div>
-               Bonfire<br>
-               安全分布式计算系统
+               <span class="logo__caption" style="font-size: 35px">Bonfire</span>&nbsp;<span class="logo__slogan" style="font-size: 20px">安全分布式计算系统</span>
             </div>
 
             </div>
             <div class="logo__menuadjust">
-               <ul class="main-menu" style="color: black">
+               <ul class="main-menu" style="color: white">
                   <li class = "bar">
                      <router-link to="/" class = "link">
                         首页
@@ -65,13 +64,13 @@
                   </li>
                </ul>
             </div>
-            <div class="menu__components d-flex align-items-center">
+            <!-- <div class="menu__components d-flex align-items-center">
                <div class="header-bar d-lg-none">
                   <span></span>
                   <span></span>
                   <span></span>
                </div>
-            </div>
+            </div> -->
         </div>
      </div>
   </header>
@@ -99,7 +98,7 @@
 <style scoped>
 		
 	.link{
-		color: black !important;
+		color: white !important;
       
 	}
    .router-link-active {
@@ -107,9 +106,11 @@
       
       border-top:none;border-left:none;border-right:none;
 
-      color: black !important;
+      color: whitesmoke !important;
 
       background-color: transparent !important;
+
+      text-decoration: underline;
    }
 
 </style>
